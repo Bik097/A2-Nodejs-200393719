@@ -6,6 +6,7 @@ const exphbs = require('express-handlebars');
 const bodyparser = require('body-parser');
 
 const studentController = require('./controllers/studentController');
+const homeController = require('./controllers/homeController');
 
 var app = express();
 app.use(bodyparser.urlencoded({
@@ -21,3 +22,4 @@ app.listen(3000, () => {
 });
 
 app.use('/student', studentController);
+app.use('/', homeController);
