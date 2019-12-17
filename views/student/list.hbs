@@ -1,4 +1,4 @@
-<h3><a class="btn btn-secondary" href="/student"><i class="fa fa-plus"></i> Create New</a> Student List</h3>
+<h3><a class="btn btn-secondary" href="/student"><span class="glyphicon glyphicon-plus"></span></a> Student List</h3>
 <table class="table table-striped">
     <thead>
         <tr>
@@ -17,8 +17,8 @@
             <td>{{this.mobile}}</td>
             <td>{{this.city}}</td>
             <td>
-                <a href="/student/{{this._id}}"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a>
-                <a href="/student/delete/{{this._id}}" onclick="return confirm('Are you sure to delete this record ?');"><i class="fa fa-trash fa-lg" aria-hidden="true"></i></a>
+                <a href="/student/{{this._id}}">EDIT</a>
+                <a href="/student/delete/{{this._id}}" onclick="return confirm('Are you sure to delete this record ?');">DELETE</a>
             </td>
         </tr>
         {{/each}}
